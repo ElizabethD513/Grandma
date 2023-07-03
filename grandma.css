@@ -1,6 +1,3 @@
-body {
-    background-color: rgb(127, 251, 255);
-}
 
 p{
     text-align: center;
@@ -15,7 +12,7 @@ p{
     position:relative;
   }
   
-  .HoverDiv img:hover {
+  .HoverDiv img:hover, .growing-image.enlarge {
     transform-origin:center;
     -moz-transform: scale(2.8);
     -webkit-transform: scale(2.8);
@@ -27,14 +24,13 @@ p{
       display: inline-block;
       border: 1px solid #ddd;
       border-radius: 4px;
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
       padding: 5px;
       transition: 0.3s;
-    position:relative;
+      position:relative;
   }
   
-  img:hover {
-      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  }
+
   .flowers1 {
       position:absolute;
       left:1rem;
@@ -45,7 +41,10 @@ p{
     right:1rem;
     top:1rem;
   }
-  
+  .imageContainer > img:click{
+    width: 500px;
+    height: 500px;
+  }
   /*body {
     background-color: rgb(127, 251, 255);
 }
