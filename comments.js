@@ -19,11 +19,20 @@ function renderComments(comments){
         // create commentBlock jquery object from HTML
         const $commentBlock = $(`
             <div class="comment-outer" id="comment-${commentObj.date}">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="comment-name"></div>
+                        <div class="comment-date">${setTime(commentObj.date)}</div>
+                        <div class="comment-text"></div>
+                    </div>
+                </div>
+            </div>`)
+           /* const $commentBlock = $(`
+            <div class="comment-outer" id="comment-${commentObj.date}">
                 <div class="comment-name"></div>
                 <div class="comment-date">${setTime(commentObj.date)}</div>
                 <div class="comment-text"></div>
-            </div>`)
-
+            </div>`)*/
         // add name and comment to the html
         // needs to be done using .text() to prevent against hacking
         $commentBlock.find('.comment-name').text(commentObj.name)
