@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Letters To Heaven</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="./comments.css"/>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
    <!-- <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">-->
 </head>
 <body>
     <main>
-        <h1>Welcome to My Website</h1>
-        <form id="commentForm" name="commentForm" action="/.netlify/functions/comments" method="post" data-netlify-recaptcha="true" data-netlify="true">
+        <div class="container">
+        <h1>Letters To Heaven</h1>
+        <p>A place for loving messages to Edna</p>
+        <form container id="commentForm" name="commentForm" action="/.netlify/functions/comments" method="post" data-netlify-recaptcha="true" data-netlify="true">
             <label for="name">Name</label>
+            <br>
             <input type="text" id="name" name="name">
             <br><br>
-            <label for="comment">Comment</label>
+            <label for="comment">Message To Edna</label>
+            <br>
             <textarea id="comment" name="comment"></textarea>
             <br><br>
             <!--<label for="password">Password</label>
@@ -25,12 +30,20 @@
             <br><br>-->
             <input class="g-recaptcha" data-sitekey="6LcHJugmAAAAAFqxCuaWWLAYMoBcHcdy4vE2Vfvh" data-callback='submitForm' data-action='submit' type="submit">
         </form>
-
-        <h2>Comments</h2>
+<br><br><br><br>
+        <h2>Messages for Edna:</h2>
         <div id="commentList">
 
         </div>
+    </div>
     </main>
     <script src="comments.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <a href="photos.html" class="btn btn-info">Photos page</a>
+    <a href="index.html" class="btn btn-info">Edna's page</a>
 </body>
 </html>

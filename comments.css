@@ -1,0 +1,15 @@
+body {
+    background-image: url('images/sunset.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Lucida Handwriting";
+    text-align: center;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+  }
+
+  

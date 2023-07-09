@@ -20,7 +20,7 @@ function renderComments(comments){
         const $commentBlock = $(`
             <div class="comment-outer" id="comment-${commentObj.date}">
                 <div class="comment-name"></div>
-                <div class="comment-date">${commentObj.date}</div>
+                <div class="comment-date">${setTime(commentObj.date)}</div>
                 <div class="comment-text"></div>
             </div>`)
 
@@ -54,6 +54,11 @@ function handleSuccessResponse(data){
     resetForm()
 }
 
+function setTime(unixTimestamp) {
+    const dateObject = new Date(unixTimestamp)
+    const humanDateFormat = dateObject.toLocaleString() 
+    return humanDateFormat
+}
 
 function submitForm(token){
     // get elements as jquery objects
