@@ -3,7 +3,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: "Lucida Handwriting";
+    /*font-family: "Lucida Handwriting";*/
+    font-family: "Lucida Handwriting", 'Cedarville Cursive', cursive;
     text-align: center;
 }
 
@@ -16,3 +17,7 @@ textarea {
     width: 50%;
     margin: 0 auto;
 }  
+
+@media (max-width: 576px) {
+    #commentList{font-size: 12px;}
+}
